@@ -1,3 +1,5 @@
+import { featuredPosts } from './data/featured-posts';
+import { PostCard } from './models/PostCard';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
 	styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-	title = 'tc2-exercise1';
+	featuredPosts: PostCard[] = featuredPosts;
 }

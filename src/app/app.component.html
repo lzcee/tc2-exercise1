@@ -3,6 +3,12 @@
 </header>
 
 <main>
+	<section>
+		<h2>Featured Posts</h2>
+		<div *ngFor="let post of featuredPosts">
+			<app-post-card [post]="post"></app-post-card>
+		</div>
+	</section>
 </main>
 
 <footer>
